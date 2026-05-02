@@ -1,0 +1,19 @@
+package Q8;
+
+import java.util.Scanner;
+
+public class Q8 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a sentence with ! : ");
+        String text = input.nextLine();
+
+        int index = text.indexOf('!');
+
+        String part1 = text.substring(0, index);
+        String part2 = text.substring(index + 1);
+
+        System.out.println(part1 + part2);
+    }
+}
